@@ -32,7 +32,7 @@ Maintenant que les deux APIs sont réunies, créons un produit et ouvrons un com
 2. Dans *Users*, créez un utilisateur
 3. Dans *Products*, créez un produit en lui associant les deux APIs Fibonacci et Lucas en n'oubliant pas de la publier en cochant l'élément adéquat.
 4. Créez maintenant un abonnement en cliquant sur *Subscriptions*, associez-y le produit et l'utilisateur préalablement créés. 
-5. Publiez le portail développeur (sans oublier d'activer CORS) et naviguez maintenant vers le portail développeur
+5. Publiez le portail développeur (sans oublier d'activer CORS) et naviguez maintenant vers le portail développeur (je vous conseille d'utiliser le mode Privé/Incognito)
 6. Autentifiez-vous avec l'utilisateur préalablement créé et testez vos APIs
 7. (optionnel) Configurez deux niveaux d'abonnement, un niveau Standard avec uniquement l'API Fibonacci et un niveau Premium avec les API Fibonacci et Lucas.
 
