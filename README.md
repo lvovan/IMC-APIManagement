@@ -23,7 +23,7 @@ Séparez vous en au moins deux sous-groupes. Chaque sous-groupe crééra sa prop
 On souhaite créer une API de calcul unifiée en s'appuyant sur de l'API Management.
 1. Intégrez-y les deux Azure Functions vues précédemment. Observez que malgré le fait que les deux fonctions soient hébergées dans des ressources différentes (et ont donc des URL différentes), l'utilisation d'une couche d'API Management permet d'unifier leurs *endpoints*.
 2. Certaines applications historiques ne supportant que le XML souhaitent utiliser les fonctions proposées. Utilisez la fonctionnalité *Test* pour requêter vos API en configurant l'entête **Accept** à **application/json** et **application/xml**. Observez que le résultat est toujours au format Json.
-3. Configurez les policy de votre API Management afin de renvoyer du XML ou du Json en fonction de l'entête **Accept** utilisant [https://docs.microsoft.com/en-us/azure/api-management/api-management-transformation-policies#ConvertJSONtoXML](la policy adéquate). Testez.
+3. Configurez les policy de votre API Management afin de renvoyer du XML ou du Json en fonction de l'entête **Accept** utilisant la policy *Outbound* [https://docs.microsoft.com/en-us/azure/api-management/api-management-transformation-policies#ConvertJSONtoXML](json-to-xml) et testez.
 4. Afin de pouvoir servir à la fois du XML ou du Json en fonction de l'appelant, reconfigurez la policy *Outbound* pour qu'elle renvoie le bon format de données en fonction du header http *accept*
 5. (Optionnel) Intégrez l'une des API en utilisant l'interface *Blank API* plutôt que l'assistant *Azure Functions*.
 
