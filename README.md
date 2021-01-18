@@ -24,6 +24,7 @@ On souhaite créer une API de calcul unifiée en s'appuyant sur de l'API Managem
 3. Configurez les policy de votre API Management afin de renvoyer du XML ou du Json en fonction de l'entête `Accept` utilisant la policy *Outbound* [json-to-xml](https://docs.microsoft.com/en-us/azure/api-management/api-management-transformation-policies#ConvertJSONtoXML) et testez.
 4. Afin de pouvoir servir à la fois du XML ou du Json en fonction de l'appelant, reconfigurez la policy *Outbound* pour qu'elle renvoie le bon format de données en fonction du header http *accept*. Notez que cette policy permet à API Management d'automatiquement ajouter l'entête `content-type`, ce qui permet au client de connaître le format des données renvoyées par le service via un [MIME Type](https://developer.mozilla.org/en-US/docs/Glossary/MIME_type)
 5. (Optionnel) Intégrez l'une des API en utilisant l'interface *Blank API* plutôt que l'assistant *Azure Functions*.
+6. (Optionnel) Ajoutez une policy *inbound*, par exemple [Limit call rate by key](https://docs.microsoft.com/en-us/azure/api-management/api-management-access-restriction-policies#LimitCallRateByKey), qui limite le nombre d'appel par unité de temps.
 
 ### Gestion des accès
 Maintenant que les deux APIs sont réunies, créons un produit et ouvrons un compte développeur.
