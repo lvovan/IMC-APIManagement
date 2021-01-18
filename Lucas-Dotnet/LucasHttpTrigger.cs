@@ -14,7 +14,7 @@ namespace Company.Function
     {
         [FunctionName("LucasHttpTrigger")]
         public static async Task<IActionResult> Run(
-            [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = null)] HttpRequest req,
+            [HttpTrigger(AuthorizationLevel.Function, "get", Route = null)] HttpRequest req,
             ILogger log)
         {
             int n = int.Parse(req.Query["n"]);
