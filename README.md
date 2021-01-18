@@ -12,6 +12,7 @@ Séparez vous en au moins deux sous-groupes. Chaque sous-groupe crééra sa prop
 - sera implémentée en Python (optionnel: une en Python, l'autre en .NET)
 - sera ouverte uniquement aux requêtes en GET
 - prendra en paramètre un nombre *n*
+- sera sécurisée en mode *function* (et non *anonymous*)
 - renverra la chaîne de caractère suivante `{ "result": *valeur(n)* }`
 - pour le sous-groupe 1, implémentera le calcul du [nombre de Fibonacci](https://fr.wikipedia.org/wiki/Nombre_de_Fibonacci) de *n*
 - pour le sous-groupe 2, implémentera le calcul du [nombre de Lucas](https://fr.wikipedia.org/wiki/Nombre_de_Lucas) de *n*
