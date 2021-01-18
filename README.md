@@ -9,6 +9,7 @@
 
 ### Création et intégration d'une API
 Séparez vous en au moins deux sous-groupes. Chaque sous-groupe crééra sa propre Azure Function, hébergée indépendamment de l'autre.Chaque Azure Function:
+
     - sera implémentée en Python (optionnel: une en Python, l'autre en .NET)
     - sera ouverte uniquement aux requêtes en GET
     - prendra en paramètre un nombre *n*
