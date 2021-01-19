@@ -19,7 +19,8 @@ namespace Company.Function
         {
             int n = int.Parse(req.Query["n"]);
 
-            return new OkObjectResult(JsonConvert.SerializeObject(new { result = Lucas(n) }));
+            // return new OkObjectResult(JsonConvert.SerializeObject(new { result = Lucas(n) }));
+            return new JsonResult(new { result = Lucas(n) });            
         }        
 
         static int Lucas(int n)

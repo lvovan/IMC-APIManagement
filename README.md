@@ -36,6 +36,9 @@ Maintenant que les deux APIs sont réunies, créons un produit et ouvrons un com
 6. Autentifiez-vous avec l'utilisateur préalablement créé et testez vos APIs
 7. (optionnel) Configurez deux niveaux d'abonnement, un niveau Standard avec uniquement l'API Fibonacci et un niveau Premium avec les API Fibonacci et Lucas.
 
+### (optionnel) Personnalisation du portail développeur
+En vous connectant au portail développeur avec un compte administrateur de l'API Management, vous pourrez configurer l'apparence de ce dernier directement depuis votre navigateur.
+
 ### Déblocage
 Si vous êtes bloqués, utilisez les APIs suivantes:
  - https://lucas-fa.azurewebsites.net/api/LucasHttpTrigger?n=5
